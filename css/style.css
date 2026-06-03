@@ -569,3 +569,58 @@ footer {
         grid-template-columns: 1fr; /* Gambar atas, timeline bawah bila skrin kecil */
     }
 }
+/* ==========================================================================
+   10. PROJECT GALLERY EXTENSIONS (Gambar & Link Butang)
+   ========================================================================== */
+.blog-card {
+    padding: 0 !important; /* Buat padding jadi 0 supaya gambar rapat ke atas kad */
+    overflow: hidden;
+}
+
+.project-img-wrapper {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    border-bottom: 1px solid var(--border-color);
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.blog-project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Kotak alternatif jika gambar belum diisi */
+.img-fallback {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.05), rgba(129, 140, 248, 0.05));
+    letter-spacing: 1px;
+}
+
+.blog-content {
+    padding: 2rem; /* Kembalikan padding khusus untuk bahagian text di bawah gambar */
+}
+
+/* Butang pautan khas ke GDrive / TikTok */
+.btn-project-link {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-project-link:hover {
+    color: var(--accent-glow);
+    text-decoration: underline;
+    transform: translateX(3px); /* Gerak ke kanan sikit masa hover */
+}

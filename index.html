@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="navbar">
-            <div class="logo">KhairDevSpace</div>
+            <div class="logo">KhairiDevSpace</div>
             <nav>
                 <!-- Kita guna ID (#) supaya bila klik, dia scroll ke section bawah -->
                 <a href="#home" class="nav-link active">Home</a>
@@ -29,12 +29,11 @@
             <h1>Crafting Immersive Interactive Realities</h1>
             <p class="hero-subtitle">Welcome to my official digital portfolio. I am a software development student blending clean source code with creative 3D assets, Virtual Reality environments, and multimedia experiences.</p>
             <div class="hero-buttons">
-                <a href="#blog" class="btn btn-primary">Explore DevLogs</a>
+                <a href="#blog" class="btn btn-primary">Explore Projects</a>
                 <a href="#contact" class="btn btn-secondary">Let's Connect</a>
             </div>
         </section>
 
-       <!-- 👨‍💻 SECTION 2: ABOUT ME (Versi Bento Grid & Education Timeline) -->
        <!-- 👨‍💻 SECTION 2: ABOUT ME (Versi Pendidikan Sebenar Shamy) -->
         <section id="about" class="section-showcase" style="margin-top: 8rem;">
             <div class="section-header">
@@ -52,7 +51,7 @@
                         <div id="avatar-fallback" style="display:none; font-size: 2.5rem; margin-top: 2.5rem; font-weight: 800; color: var(--primary-color);">KS</div>
                     </div>
                     <div class="profile-bio">
-                        <h3>Muhamad Khair Syahmi Bin Rosli</h3>
+                        <h3>Muhamad Khairi Syahmi Bin Rosli</h3>
                         <p class="matric-badge">078261</p>
                         <p class="bio-text">
                             I am a digital computing enthusiast and software development student at Universiti Sultan Zainal Abidin. Integrating a strong analytical science background with creative technology design, I specialize in interactive application architectures and immersive environments.
@@ -101,41 +100,65 @@
             </div>
         </section>
 
-        <!-- ✍️ SECTION 3: BLOG (Bento Grid Posts - Pindahan dari blog.html) -->
+        <!-- ✍️ SECTION 3: LATEST PROJECTS & DEVLOGS (Versi Galeri Interaktif) -->
         <section id="blog" class="section-showcase" style="margin-top: 8rem;">
             <div class="section-header">
-                <h2>Latest Insights & DevLogs</h2>
-                <p>Documentation of my software development journey.</p>
+                <h2>Featured Projects & DevLogs</h2>
+                <p>A gallery of my interactive games, virtual reality environments, and multimedia productions.</p>
             </div>
             
             <div class="blog-grid">
-                <!-- Post 1 -->
+                <!-- Projek 1: VR Warisan -->
                 <article class="blog-card">
+                    <div class="project-img-wrapper">
+                        <!-- Nota: Letakkan gambar projek dalam folder images dan namakan 'vr_warisan.jpg' -->
+                        <img src="image/vr_warisan.png" alt="VR Warisan Showcase" class="blog-project-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="img-fallback">🕶️ VR SYSTEM</div>
+                    </div>
                     <div class="blog-content">
-                        <span class="category">Tech Stack</span>
-                        <h3>Building Responsive Web Layouts with Modern CSS</h3>
-                        <p class="date">Optimizing user interfaces across mobile and desktop platforms using fluid grid designs.</p>
-                        <p>Creating a seamless presentation layer requires a deep dive into media queries and flexible box layouts, ensuring accessible UI flow regardless of device screen limits.</p>
+                        <span class="category">Virtual Reality / Android</span>
+                        <h3>VR Warisan Experience</h3>
+                        <p class="date">Unity Engine & Android SDK Deployment</p>
+                        <p style="margin-bottom: 1.5rem;">An immersive Virtual Reality experience focused on preserving and showcasing Malay historical heritage and architectural motifs. Optimized carefully for stable performance and deployment on Android mobile devices.</p>
+                        
+                        <!-- Gantikan '#' dengan link Google Drive kau -->
+                        <a href="#" target="_blank" class="btn-project-link">Download via Google Drive &rarr;</a>
                     </div>
                 </article>
 
-                <!-- Post 2 -->
+                <!-- Projek 2: Forgotten Island -->
                 <article class="blog-card">
+                    <div class="project-img-wrapper">
+                        <!-- Nota: Letakkan gambar projek dalam folder images dan namakan 'forgotten_island.jpg' -->
+                        <img src="image/forgotten_island.png" alt="Forgotten Island Game" class="blog-project-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="img-fallback">🎮 GAME DEV</div>
+                    </div>
                     <div class="blog-content">
-                        <span class="category">Interactive Media</span>
-                        <h3>Optimizing 3D Interactive Assets for Mobile Deployment</h3>
-                        <p class="date">A look into pipeline optimization, managing texturing workflows, and mesh efficiency.</p>
-                        <p>Achieving stable runtimes on mobile hardware depends closely on texture optimization, material limits, and careful component setup to prevent performance bottlenecks.</p>
+                        <span class="category">Game Development</span>
+                        <h3>Forgotten Island</h3>
+                        <p class="date">3D Interactive Environment Design</p>
+                        <p style="margin-bottom: 1.5rem;">A 3D adventure game mapping atmospheric island physics and complex logic matrices. Built using structured asset pipelines and dynamic mechanics to deliver a compelling player experience.</p>
+                        
+                        <!-- Gantikan '#' dengan link Google Drive kau -->
+                        <a href="#" target="_blank" class="btn-project-link">Download via Google Drive &rarr;</a>
                     </div>
                 </article>
 
-                <!-- Post 3 -->
+                <!-- Projek 3: Silent Threat -->
                 <article class="blog-card">
+                    <div class="project-img-wrapper">
+                        <!-- Nota: Letakkan gambar projek dalam folder images dan namakan 'silent_threat.jpg' -->
+                        <img src="image/silent_threat.png" alt="Silent Threat Video Awareness" class="blog-project-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="img-fallback">🎬 MULTIMEDIA</div>
+                    </div>
                     <div class="blog-content">
-                        <span class="category">Workflows</span>
-                        <h3>Version Control Best Practices in Team Environments</h3>
-                        <p class="date">How structured Git commit strategies and clear branching logic keep project tracking reliable.</p>
-                        <p>Maintaining a highly traceable commit history ensures that resolving merges and tracking historical updates stays structured and predictable during active deployment stages.</p>
+                        <span class="category">Social Awareness / Video Production</span>
+                        <h3>"Silent Threat" Awareness Video</h3>
+                        <p class="date">Cinematic Editing & Visual Storyboarding</p>
+                        <p style="margin-bottom: 1.5rem;">A short-form awareness video covering modern social vulnerabilities. Structured with strong camera principles, impactful pacing, and tailored specifically for high-engagement social platforms.</p>
+                        
+                        <!-- Gantikan '#' dengan link TikTok kau -->
+                        <a href="#" target="_blank" class="btn-project-link">Watch on TikTok &rarr;</a>
                     </div>
                 </article>
             </div>
