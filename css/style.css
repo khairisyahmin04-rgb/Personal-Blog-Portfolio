@@ -701,3 +701,9 @@ footer p:first-child {
         grid-template-columns: 1fr; /* Info atas, form bawah jika skrin kecil */
     }
 }
+/* Penyelarasan warna teks tagline footer waktu Light Mode */
+[data-theme="light"] footer p:first-child {
+    background: linear-gradient(135deg, #0F172A 60%, var(--primary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
