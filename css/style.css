@@ -611,3 +611,85 @@ footer {
     text-decoration: underline;
     transform: translateX(3px); /* Gerak ke kanan sikit masa hover */
 }
+/* ==========================================================================
+   11. CONTACT SECTION EXTENSIONS (Dwi-Kolum Grid Layout)
+   ========================================================================== */
+.contact-bento-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1.7fr; /* Info kiri lebih kecil sedikit dari borang form */
+    gap: 2rem;
+    align-items: start;
+}
+
+.contact-info-card, .contact-form-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2.5rem;
+}
+
+.contact-info-card h3, .contact-form-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.contact-subtext {
+    font-size: 0.95rem;
+    opacity: 0.7;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+/* Senarai Item Hubungi */
+.contact-links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.01);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-item:hover {
+    border-color: var(--primary-color);
+    transform: translateX(4px);
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+}
+
+.contact-detail h4 {
+    font-size: 0.9rem;
+    opacity: 0.5;
+    font-weight: 500;
+    margin-bottom: 0.1rem;
+}
+
+.contact-detail a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.contact-detail a:hover {
+    text-decoration: underline;
+    color: var(--accent-glow);
+}
+
+/* REKABENTUK RESPONSIF (Skrin Telefon) */
+@media (max-width: 900px) {
+    .contact-bento-grid {
+        grid-template-columns: 1fr; /* Info atas, form bawah jika skrin kecil */
+    }
+}

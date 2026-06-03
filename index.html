@@ -158,29 +158,68 @@
             </div>
         </section>
 
-        <!-- ✉️ SECTION 4: CONTACT (Pindahan dari contact.html) -->
+        <!-- ✉️ SECTION 4: CONTACT (Versi Dwi-Kolum: Sosmed & Form) -->
         <section id="contact" class="section-showcase" style="margin-top: 8rem; margin-bottom: 4rem;">
             <div class="section-header">
                 <h2>Let's Connect</h2>
-                <p>Have a question or want to collaborate? Drop a message below!</p>
+                <p>Have a question, collaboration idea, or project review? Reach out through any platform below!</p>
             </div>
             
-            <div class="contact-section">
-                <form id="contact-form" onsubmit="alert('Thank you for reaching out! Your message was simulated successfully.'); return false;">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" required placeholder="Your Name">
+            <div class="contact-bento-grid">
+                <!-- Kolum Kiri: Sosmed & Info Hubungi -->
+                <div class="contact-info-card">
+                    <h3>Contact Information</h3>
+                    <p class="contact-subtext">Feel free to drop an email or follow my ongoing technical development logs across these spaces.</p>
+                    
+                    <div class="contact-links-list">
+                        <!-- Email -->
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <div class="contact-detail">
+                                <h4>Email</h4>
+                                <a href="mailto:khairsyahmi@example.com">khairsyahmi@example.com</a>
+                            </div>
+                        </div>
+
+                        <!-- GitHub -->
+                        <div class="contact-item">
+                            <span class="contact-icon">💻</span>
+                            <div class="contact-detail">
+                                <h4>GitHub Portfolio</h4>
+                                <a href="https://github.com/khairisyahmin04-rgb" target="_blank">github.com/khairisyahmin04-rgb</a>
+                            </div>
+                        </div>
+
+                        <!-- LinkedIn / Digital Network -->
+                        <div class="contact-item">
+                            <span class="contact-icon">🌐</span>
+                            <div class="contact-detail">
+                                <h4>Professional Network</h4>
+                                <a href="https://linkedin.com" target="_blank">linkedin.com/in/khairsyahmi</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" required placeholder="yourname@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" rows="5" required placeholder="Describe your project idea..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: 8px !important;">Send Message</button>
-                </form>
+                </div>
+
+                <!-- Kolum Kanan: Borang Mesej (Sedia Ada yang Diperkemas) -->
+                <div class="contact-form-card">
+                    <h3>Send an Instant Message</h3>
+                    <form id="contact-form" onsubmit="alert('Thank you for reaching out! Your message was simulated successfully.'); return false;">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="yourname@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="Describe your project idea..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: 8px !important;">Send Message</button>
+                    </form>
+                </div>
             </div>
         </section>
 
