@@ -1,12 +1,8 @@
 /* ==========================================================================
-   1. DESIGN SYSTEM & VARIABLES (Gaya Framer Gelap)
+   1. DESIGN SYSTEM & VARIABLES (Dwi-Skema Warna)
    ========================================================================== */
-   html {
-    scroll-behavior: smooth; /* Ini magik yang buat dia scroll lembut ke bawah! */
-    scroll-padding-top: 80px; /* Supaya bila dia scroll bawah, tajuk section tak terlindung di sebalik navbar */
-}
 :root {
-    /* Base Colors */
+    /* DEFAULT: NIGHT MODE (Gaya Framer Gelap & Neon Glow) */
     --bg-color: #0B0F19;         /* Biru gelap pekat (Deep Slate Blue) */
     --text-color: #F3F4F6;       /* Putih mutiara lembut */
     --card-bg: #111827;          /* Kad kelabu gelap premium */
@@ -17,18 +13,23 @@
     --accent-glow: #818CF8;      /* Soft Indigo untuk shadow effect */
 }
 
-/* Kekalkan skema light theme sekiranya butang mode ditekan */
+/* LIGHT MODE OPTIMIZATION (Kontras Tinggi & Tulisan Jelas) */
 [data-theme="light"] {
-    --bg-color: #F9FAFB;
-    --text-color: #111827;
-    --card-bg: #FFFFFF;
-    --border-color: #E5E7EB;
-    --primary-color: #2563EB;
+    --bg-color: #F8FAFC;         /* Background kelabu cerah bersih */
+    --text-color: #0F172A;       /* Tulisan warna Slate gelap pekat (Mudah dibaca) */
+    --card-bg: #FFFFFF;          /* Kad warna putih bersih */
+    --border-color: #E2E8F0;     /* Garisan border kelabu lembut */
+    --primary-color: #0284C7;    /* Biru laut pekat (Professional waktu cerah) */
 }
 
 /* ==========================================================================
-   2. GLOBAL RESET & BASE STYLES
+   2. GLOBAL RESET, SMOOTH SCROLL & BASE STYLES
    ========================================================================== */
+html {
+    scroll-behavior: smooth;    /* Kesan scroll bergerak secara lembut */
+    scroll-padding-top: 80px;   /* Mengelakkan tajuk tersorok di bawah navbar melekat */
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -41,9 +42,14 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
-    /* Tambah titik dot-grid subtle pada background latar belakang */
+    /* Titik dot-grid subtle pada latar belakang (Vibe Developer) */
     background-image: radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 0);
     background-size: 24px 24px;
+}
+
+/* Ubahsuai titik dot-grid latar belakang waktu Light Mode */
+[data-theme="light"] body {
+    background-image: radial-gradient(rgba(15, 23, 42, 0.03) 1px, transparent 0);
 }
 
 .container {
@@ -54,15 +60,19 @@ body {
 }
 
 /* ==========================================================================
-   3. NAVIGATION BAR (Header)
+   3. NAVIGATION BAR (Header Glassmorphism)
    ========================================================================== */
 header {
-    background-color: rgba(17, 24, 39, 0.8);
-    backdrop-filter: blur(12px); /* Kesan glassmorphism kabur di belakang navbar */
+    background-color: rgba(11, 15, 25, 0.8);
+    backdrop-filter: blur(12px); /* Kesan kabur di belakang navbar */
     border-bottom: 1px solid var(--border-color);
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+[data-theme="light"] header {
+    background-color: rgba(248, 250, 252, 0.8);
 }
 
 .navbar {
@@ -77,7 +87,7 @@ header {
 .logo {
     font-weight: 800;
     font-size: 1.4rem;
-    color: #FFFFFF;
+    color: var(--text-color);
     letter-spacing: -0.5px;
 }
 
@@ -89,7 +99,7 @@ nav {
 nav a {
     text-decoration: none;
     color: var(--text-color);
-    opacity: 0.7;
+    opacity: 0.6;
     margin-left: 1.5rem;
     font-weight: 500;
     font-size: 0.95rem;
@@ -112,13 +122,17 @@ nav a.active, nav a:hover {
     font-size: 0.85rem;
 }
 
+[data-theme="light"] .btn-toggle {
+    background: rgba(15, 23, 42, 0.05);
+}
+
 .btn-toggle:hover {
     background: rgba(56, 189, 248, 0.1);
     border-color: var(--primary-color);
 }
 
 /* ==========================================================================
-   4. HERO SECTION (Impak Visual Utama)
+   4. HERO SECTION (Gradien Teks Elegan)
    ========================================================================== */
 .hero-enhanced {
     text-align: center;
@@ -146,8 +160,15 @@ nav a.active, nav a:hover {
     line-height: 1.15;
     margin-bottom: 1.5rem;
     letter-spacing: -1px;
-    /* Tulisan teks ada kesan gradien warna */
+    /* Kesan gradien tulisan waktu Night Mode */
     background: linear-gradient(135deg, #FFFFFF 40%, var(--primary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Penyelarasan gradien tulisan tajuk utama waktu Light Mode */
+[data-theme="light"] .hero-enhanced h1 {
+    background: linear-gradient(135deg, #0F172A 30%, var(--primary-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -168,7 +189,7 @@ nav a.active, nav a:hover {
     gap: 1rem;
 }
 
-/* Buttons System */
+/* Sistem Butang Moden */
 .btn {
     display: inline-block;
     text-decoration: none;
@@ -185,6 +206,10 @@ nav a.active, nav a:hover {
     background: linear-gradient(135deg, var(--primary-color), var(--accent-glow));
     color: #0B0F19 !important;
     box-shadow: 0 4px 14px rgba(56, 189, 248, 0.25);
+}
+
+[data-theme="light"] .btn-primary {
+    color: #FFFFFF !important;
 }
 
 .btn-primary:hover {
@@ -204,9 +229,9 @@ nav a.active, nav a:hover {
 }
 
 /* ==========================================================================
-   5. BENTO LAYOUT & INTERACTIVE CARDS (Glow Effect)
+   5. BENTO LAYOUT & KAD INTERAKTIF (Neon Glow Effect)
    ========================================================================== */
-.section-showcase, .section-blog-preview {
+.section-showcase {
     margin-top: 6rem;
 }
 
@@ -231,14 +256,14 @@ nav a.active, nav a:hover {
     margin-top: 0.2rem;
 }
 
-/* Grid layout untuk susunan kad projek */
+/* Grid layout untuk susunan kad */
 .project-grid, .blog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
 }
 
-/* Transformasi Kad Menjadi Bento Style & Neon Glow */
+/* Transformasi Bento Style & Neon Glow */
 .project-card, .blog-card, .preview-card, .about-section, .contact-section {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -247,13 +272,13 @@ nav a.active, nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
                 border-color 0.4s ease, 
                 box-shadow 0.4s ease;
 }
 
-/* Kesan khas bila cursor di-hover atas kad */
+/* Efek bercahaya (Glow) bila cursor di-hover atas kad */
 .project-card:hover, .blog-card:hover, .preview-card:hover {
     transform: translateY(-5px);
     border-color: var(--primary-color);
@@ -275,6 +300,7 @@ nav a.active, nav a:hover {
     font-weight: 600;
     margin-bottom: 0.8rem;
     letter-spacing: -0.3px;
+    color: var(--text-color);
 }
 
 .project-body p, .blog-content p {
@@ -283,16 +309,8 @@ nav a.active, nav a:hover {
 }
 
 /* ==========================================================================
-   6. PAGES SPECIFIC COMPONENTS (Blog, About, Contact)
+   6. ELEMEN KHAS SECTION (Blog, About, Contact)
    ========================================================================== */
-.page-title {
-    font-size: 2.5rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
-    letter-spacing: -0.5px;
-}
-
-/* Blog Page Dates */
 .date {
     font-size: 0.88rem;
     color: var(--text-color);
@@ -300,19 +318,11 @@ nav a.active, nav a:hover {
     margin: 0.4rem 0 1.2rem 0;
 }
 
-/* View All Links */
-.view-all, .read-more-link {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: 600;
-    font-size: 0.95rem;
+ul {
+    color: var(--text-color);
 }
 
-.view-all:hover, .read-more-link:hover {
-    text-decoration: underline;
-}
-
-/* Contact Form Module Styling */
+/* Pengurusan modul input borang contact */
 .contact-section {
     max-width: 600px;
     margin: 0 auto;
@@ -327,7 +337,7 @@ nav a.active, nav a:hover {
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
     font-weight: 500;
-    opacity: 0.9;
+    color: var(--text-color);
 }
 
 .form-group input, .form-group textarea {
@@ -335,16 +345,21 @@ nav a.active, nav a:hover {
     padding: 0.85rem 1rem;
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    background-color: rgba(11, 15, 25, 0.5);
+    background-color: rgba(11, 15, 25, 0.3);
     color: var(--text-color);
     font-size: 0.95rem;
     outline: none;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+[data-theme="light"] .form-group input, 
+[data-theme="light"] .form-group textarea {
+    background-color: rgba(255, 255, 255, 1);
+}
+
 .form-group input:focus, .form-group textarea:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
 }
 
 /* ==========================================================================
@@ -361,7 +376,7 @@ footer {
 }
 
 /* ==========================================================================
-   8. MOBILE RESPONSIVENESS (Media Queries)
+   8. RESPONSIVE LAYOUT (Media Queries untuk Skrin Phone)
    ========================================================================== */
 @media (max-width: 768px) {
     .navbar {
@@ -405,6 +420,6 @@ footer {
     }
     
     .project-grid, .blog-grid {
-        grid-template-columns: 1fr; /* Jadi satu colum penuh bila skrin phone */
+        grid-template-columns: 1fr; /* Bertukar menjadi 1 baris penuh pada skrin telefon */
     }
 }
