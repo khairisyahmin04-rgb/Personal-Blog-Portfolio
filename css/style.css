@@ -1,6 +1,10 @@
 /* ==========================================================================
    1. DESIGN SYSTEM & VARIABLES (Gaya Framer Gelap)
    ========================================================================== */
+   html {
+    scroll-behavior: smooth; /* Ini magik yang buat dia scroll lembut ke bawah! */
+    scroll-padding-top: 80px; /* Supaya bila dia scroll bawah, tajuk section tak terlindung di sebalik navbar */
+}
 :root {
     /* Base Colors */
     --bg-color: #0B0F19;         /* Biru gelap pekat (Deep Slate Blue) */

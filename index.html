@@ -11,77 +11,114 @@
         <div class="navbar">
             <div class="logo">KhairDevSpace</div>
             <nav>
-                <a href="index.html" class="active">Home</a>
-                <a href="about.html">About</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
+                <!-- Kita guna ID (#) supaya bila klik, dia scroll ke section bawah -->
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
                 <button id="theme-toggle" class="btn-toggle">🌙 Mode</button>
             </nav>
         </div>
     </header>
 
     <main class="container">
-        <!-- 🔥 HERO SECTION: Impak Visual Pertama -->
-        <section class="hero-enhanced">
+        
+        <!-- 🏠 SECTION 1: HOME (HERO) -->
+        <section id="home" class="hero-enhanced">
             <div class="hero-badge">Available for Projects & Collaboration</div>
             <h1>Crafting Immersive Interactive Realities</h1>
             <p class="hero-subtitle">Welcome to my official digital portfolio. I am a software development student blending clean source code with creative 3D assets, Virtual Reality environments, and multimedia experiences.</p>
             <div class="hero-buttons">
-                <a href="blog.html" class="btn btn-primary">Explore DevLogs</a>
-                <a href="contact.html" class="btn btn-secondary">Let's Connect</a>
+                <a href="#blog" class="btn btn-primary">Explore DevLogs</a>
+                <a href="#contact" class="btn btn-secondary">Let's Connect</a>
             </div>
         </section>
 
-        <!-- 🚀 FEATURED PROJECTS: Menunjukkan Kepakaran & Entrepreneurial Mindset -->
-        <section class="section-showcase">
+        <!-- 👨‍💻 SECTION 2: ABOUT ME (Pindahan dari about.html) -->
+        <section id="about" class="section-showcase" style="margin-top: 8rem;">
             <div class="section-header">
-                <h2>Featured Technical Work</h2>
-                <p>A glimpse into creative engineering applications and digital asset pipelines.</p>
+                <h2>About Me</h2>
+                <p>Academic profile and core technology stacks.</p>
+            </div>
+            <div class="about-section">
+                <p style="font-weight: bold; color: var(--primary-color); font-size: 1.2rem;">Muhamad Khair Syahmi Bin Rosli (ID: 078261)</p>
+                <p style="margin-top: 1rem; opacity: 0.85;">I am an academic affiliate specializing in software development, 3D world-building, and digital interactive experiences. This platform serves as a unified digital portfolio for my software engineering milestones.</p>
+                
+                <h3 style="margin-top: 2rem; margin-bottom: 0.8rem; color: #fff;">My Core Focus Areas:</h3>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem; opacity: 0.85; line-height: 1.8;">
+                    <li><strong>Virtual Reality (VR) Development:</strong> Actively creating immersive historical experiences like <em>"VR Warisan"</em> using the Unity engine tailored for Android ecosystems.</li>
+                    <li><strong>3D Modeling & Animation:</strong> Utilizing Blender to construct intricate environments, correct missing texture dependencies, and pose detailed character models.</li>
+                    <li><strong>Creative Visual Media:</strong> Scripting, designing storyboards, and framing cinematic concepts for multimedia projects like the short film <em>"Topeng"</em>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ✍️ SECTION 3: BLOG (Bento Grid Posts - Pindahan dari blog.html) -->
+        <section id="blog" class="section-showcase" style="margin-top: 8rem;">
+            <div class="section-header">
+                <h2>Latest Insights & DevLogs</h2>
+                <p>Documentation of my software development journey.</p>
             </div>
             
-            <div class="project-grid">
-                <!-- Project 1: VR Warisan -->
-                <div class="project-card">
-                    <div class="project-tag">Unity / Android VR</div>
-                    <div class="project-body">
-                        <h3>VR Warisan Experience</h3>
-                        <p>An immersive Virtual Reality environment dedicated to exploring 15th-century Malay heritage and architecture. Built utilizing custom asset balancing for runtime optimization on Android device hardware.</p>
+            <div class="blog-grid">
+                <!-- Post 1 -->
+                <article class="blog-card">
+                    <div class="blog-content">
+                        <span class="category">Tech Stack</span>
+                        <h3>Building Responsive Web Layouts with Modern CSS</h3>
+                        <p class="date">Optimizing user interfaces across mobile and desktop platforms using fluid grid designs.</p>
+                        <p>Creating a seamless presentation layer requires a deep dive into media queries and flexible box layouts, ensuring accessible UI flow regardless of device screen limits.</p>
                     </div>
-                </div>
+                </article>
 
-                <!-- Project 2: Short Film Project -->
-                <div class="project-card">
-                    <div class="project-tag">Multimedia / Cinematic</div>
-                    <div class="project-body">
-                        <h3>"Topeng" Cinematic Production</h3>
-                        <p>A short film creative concept mapping identity layers. Developed alongside comprehensive pre-production storyboards, lighting system layouts, and high-fidelity promotional asset designs.</p>
+                <!-- Post 2 -->
+                <article class="blog-card">
+                    <div class="blog-content">
+                        <span class="category">Interactive Media</span>
+                        <h3>Optimizing 3D Interactive Assets for Mobile Deployment</h3>
+                        <p class="date">A look into pipeline optimization, managing texturing workflows, and mesh efficiency.</p>
+                        <p>Achieving stable runtimes on mobile hardware depends closely on texture optimization, material limits, and careful component setup to prevent performance bottlenecks.</p>
                     </div>
-                </div>
+                </article>
 
-                <!-- Project 3: Smart Automation Concept -->
-                <div class="project-card">
-                    <div class="project-tag">Design / UI Storyboarding</div>
-                    <div class="project-body">
-                        <h3>Future Smart-Home Automation</h3>
-                        <p>A concept UI workflow animation mapping interaction behaviors for connected user spaces, focusing closely on responsive presentation interfaces and dynamic visual feedback structures.</p>
+                <!-- Post 3 -->
+                <article class="blog-card">
+                    <div class="blog-content">
+                        <span class="category">Workflows</span>
+                        <h3>Version Control Best Practices in Team Environments</h3>
+                        <p class="date">How structured Git commit strategies and clear branching logic keep project tracking reliable.</p>
+                        <p>Maintaining a highly traceable commit history ensures that resolving merges and tracking historical updates stays structured and predictable during active deployment stages.</p>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
 
-        <!-- ✍️ LATEST BLOG PREVIEW: Tarik minat pembaca -->
-        <section class="section-blog-preview">
+        <!-- ✉️ SECTION 4: CONTACT (Pindahan dari contact.html) -->
+        <section id="contact" class="section-showcase" style="margin-top: 8rem; margin-bottom: 4rem;">
             <div class="section-header">
-                <h2>Recent Insights</h2>
-                <a href="blog.html" class="view-all">View All Posts &rarr;</a>
+                <h2>Let's Connect</h2>
+                <p>Have a question or want to collaborate? Drop a message below!</p>
             </div>
-            <div class="preview-card">
-                <span class="preview-category">Featured Post</span>
-                <h3>Optimizing 3D Interactive Assets for Mobile Deployment</h3>
-                <p>Achieving stable runtimes on mobile hardware depends closely on texture optimization, material limits, and careful asset processing to avoid system bottlenecks...</p>
-                <a href="blog.html" class="read-more-link">Continue Reading</a>
+            
+            <div class="contact-section">
+                <form id="contact-form" onsubmit="alert('Thank you for reaching out! Your message was simulated successfully.'); return false;">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="yourname@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required placeholder="Describe your project idea..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: 8px !important;">Send Message</button>
+                </form>
             </div>
         </section>
+
     </main>
 
     <footer>
