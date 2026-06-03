@@ -35,6 +35,7 @@
         </section>
 
        <!-- 👨‍💻 SECTION 2: ABOUT ME (Versi Bento Grid & Education Timeline) -->
+       <!-- 👨‍💻 SECTION 2: ABOUT ME (Versi Pendidikan Sebenar Shamy) -->
         <section id="about" class="section-showcase" style="margin-top: 8rem;">
             <div class="section-header">
                 <h2>About Me</h2>
@@ -45,52 +46,54 @@
                 <!-- Kotak Kiri: Profile & Description -->
                 <div class="about-card-profile">
                     <div class="profile-frame">
-                        <!-- Nota: Gantikan 'gambar-shamy.jpg' dengan nama file gambar kau nanti -->
-                        <img src="images/profile.jpg" alt="Muhamad Khairi Syahmi" class="profile-img">
+                        <!-- Kod gambar dipastikan membaca folder images dengan betul -->
+                        <img src="image/profile.jpg" alt="Muhamad Khairi Syahmi" class="profile-img" onerror="this.style.display='none'; document.getElementById('avatar-fallback').style.display='block';">
+                        <!-- Alternatif Teks Bullet bertindak sebagai fallback kalau gambar kau lambat load/salah nama -->
+                        <div id="avatar-fallback" style="display:none; font-size: 2.5rem; margin-top: 2.5rem; font-weight: 800; color: var(--primary-color);">KS</div>
                     </div>
                     <div class="profile-bio">
-                        <h3>Muhamad Khairi Syahmi Bin Rosli</h3>
-                        <p class="matric-badge">ID: 078261</p>
+                        <h3>Muhamad Khair Syahmi Bin Rosli</h3>
+                        <p class="matric-badge">078261</p>
                         <p class="bio-text">
-                            I am a software development student and academic affiliate passionate about bridging clean code with creative multimedia execution. I specialize in building interactive applications, designing optimized 3D pipelines, and capturing compelling digital narratives.
+                            I am a digital computing enthusiast and software development student at Universiti Sultan Zainal Abidin. Integrating a strong analytical science background with creative technology design, I specialize in interactive application architectures and immersive environments.
                         </p>
                     </div>
                 </div>
 
-                <!-- Kotak Kanan: Interactive Education Timeline -->
+                <!-- Kotak Kanan: Real Education Timeline (Tepat Kronologi) -->
                 <div class="about-card-timeline">
                     <h3>Education Roadmap</h3>
                     <div class="timeline">
-                        <!-- Timeline Item 1 -->
+                        <!-- Timeline 1: Degree UniSZA -->
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
                                 <span class="timeline-date">2024 - Present</span>
-                                <h4>Diploma in Information Technology</h4>
+                                <h4>Sarjana Muda Teknologi Maklumat (Informatik Media) dengan Kepujian</h4>
                                 <p class="institution">Universiti Sultan Zainal Abidin (UniSZA)</p>
-                                <p class="timeline-desc">Focusing on Core Software Engineering, Web Development (CSD 34203), and Database Systems. Actively exploring human-computer interaction models.</p>
+                                <p class="timeline-desc">Specializing in media optimization, real-time application pipelines, and dynamic front-end system behaviors. Applying complex interaction frameworks to human-centric platforms.</p>
                             </div>
                         </div>
 
-                        <!-- Timeline Item 2 -->
+                        <!-- Timeline 2: Matrikulasi Perak -->
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
-                                <span class="timeline-date">2024</span>
-                                <h4>Interactive Media & 3D Foundations</h4>
-                                <p class="institution">Self-Directed Technical Training</p>
-                                <p class="timeline-desc">Mastered low-poly asset optimization and texturing workflows in Blender, alongside real-time engine physics constraints.</p>
+                                <span class="timeline-date">2023 - 2024</span>
+                                <h4>Matrikulasi Sains Tulen</h4>
+                                <p class="institution">Kolej Matrikulasi Perak (KMP)</p>
+                                <p class="timeline-desc">Advanced calculation practices, system algorithms models, and foundational computation methodologies designed for rigorous engineering disciplines.</p>
                             </div>
                         </div>
 
-                        <!-- Timeline Item 3 -->
+                        <!-- Timeline 3: SPM SM Sains Jeli -->
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
-                                <span class="timeline-date">Before 2024</span>
-                                <h4>Sijil Pelajaran Malaysia (SPM)</h4>
-                                <p class="institution">Secondary Education Base</p>
-                                <p class="timeline-desc">Established fundamental analytical thinking, logic applications, and preliminary multimedia design interests.</p>
+                                <span class="timeline-date">2018 - 2022</span>
+                                <h4>Sijil Pelajaran Malaysia (Aliran Sains Tulen)</h4>
+                                <p class="institution">SM Sains Jeli (SMSJ)</p>
+                                <p class="timeline-desc">Early scientific research exposure, structural analytical thinking, logic matrices formulation, and introductory dynamic platform concepts.</p>
                             </div>
                         </div>
                     </div>
