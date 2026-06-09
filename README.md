@@ -1,26 +1,51 @@
-# Personal Software Engineering & Interactive Media Blog Portfolio
+# 🌐 KhairiDevSpace | Personal Blog & Portfolio Website
 
-An entrepreneurial project portfolio website designed to showcase personal software engineering projects, 3D interactive assets development logs, and technical insights. Built to demonstrate responsive design implementation, dynamic DOM interaction, and structured version control workflows.
+Welcome to my official digital engineering and portfolio repository. This platform serves as a unified showcase of my academic achievements, real-time application pipelines, and creative interactive media configurations.
 
-## 🚀 Key Features
-*   **Responsive Multi-page Interface:** Completely responsive layouts across desktop, tablet, and mobile displays using modern CSS Grid and Flexbox mechanics.
-*   **Dynamic Client-Side Theme Engine:** Seamless integration of Light and Dark color modes using JavaScript state management persistent via `localStorage`.
-*   **Curated DevLogs Feed:** Structured layout featuring sample technical write-ups covering UI styling optimizations, software version controls, and mobile resource balancing.
-*   **Interactive Context-Form Module:** Functional validation contact module interface styled cleanly for high client engagement.
+---
 
-## 🛠️ Technologies & Tools Used
-*   **Structure:** HTML5 Semantic Markup
-*   **Styling & Design System:** CSS3 Custom Properties (Variables) & Media Queries
-*   **Interactivity:** Vanilla JavaScript (ES6 Modules)
-*   **Version Control System:** Git & GitHub Desktop
-*   **IDE Tools:** Visual Studio Code
+## 👨‍💻 Student Identity
+* **Name:** MUHAMAD KHAIRI SYAHMI BIN ROSLI
+* **Matric Number:** 078261
+* **Program:** BACHELOR OF INFORMATION TECHNOLOGY (INFORMATICS MEDIA) 
 
-## 📈 Problem Solving & Opportunity Recognition
-*   **Problem:** Standard portfolio setups often struggle to maintain legible content layouts across shifting screen dimensions or cause visual fatigue during extended night reading.
-*   **Solution:** Resolved interface scaling conflicts by transitioning to fluid layout designs. Implemented a systemic data-attribute theme controller toggle to alleviate visual eye strain instantly.
-*   **Value Creation:** Provides clear, accessible technical communication pathways for potential development stakeholders or academic project evaluation teams.
+---
 
-## ⚙️ How to Locally Run the Project
-1. Clone this repository onto your operating workspace directory:
+## ⚡ Core Features & Design Languages
+* **Framer-Inspired Premium Theme:** Engineered with a modern minimalist dark ecosystem combined with interactive neon-hover glowing boundaries.
+* **Fully Responsive Adaptive Layout:** Crafted using core semantic structures and custom CSS media queries to ensure smooth navigation across desktop, tablet, and mobile displays.
+* **Single-Page Smooth Navigation:** Utilizes custom JavaScript scroll-spy integration for zero-refresh section transitions and real-time navigation link highlights.
+* **Dual-Theme Toggle Architecture:** Features high-contrast custom variables optimized specifically for clear font readability in Light Mode, and soft glowing aesthetics in Night Mode.
+
+---
+
+## 🎮 Featured Engineering Projects Showcase
+The built-in project gallery documents active milestones, including raw build links:
+
+1. **🕶️ VR Warisan Experience**
+   * Real-time architectural world-building and cultural preservation environment developed using the **Unity Engine** and optimized for **Android SDK** deployment.
+2. **🎮 Forgotten Island**
+   * A 3D interactive physics simulation mapping environmental states, customized low-poly meshes, and systemic gameplay logic layers.
+3. **🎬 "Silent Threat" Awareness Video**
+   * A cinematic multimedia media asset employing industry-standard composition matrices, audio pacing, and direct engagement layouts.
+
+---
+
+## 🛠️ Technology Stack & Pipeline Tools
+* **Front-End Layer:** Semantic HTML5, Modular CSS3 Architecture (Custom Properties), and Native Vanilla JavaScript (ES6+).
+* **3D Optimization Tools:** Blender (Mesh correction, low-poly texturing, and character asset posing configurations).
+* **Build Engines:** Unity Real-Time Development Platform.
+* **Version Control:** Git & Git-flow tracking structure deployed directly via **GitHub Pages**.
+
+---
+
+## 🚀 Deployment & Installation
+To inspect or build upon this architecture locally, run the following protocols in your terminal:
+
 ```bash
-   git clone [https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git)
+# Clone the repository
+git clone [https://github.com/khairisyahmin04-rgb/Personal-Blog-Portfolio.git](https://github.com/khairisyahmin04-rgb/Personal-Blog-Portfolio.git)
+
+# Navigate into the project root directory
+cd Personal-Blog-Portfolio
+
